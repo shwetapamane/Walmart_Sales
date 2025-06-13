@@ -20,7 +20,5 @@ is_holiday = st.selectbox("Is it a Holiday?", options=[0, 1], format_func=lambda
 # --- Prediction ---
 if st.button("Predict Weekly Sales"):
     input_data = np.array([[store, dept, temperature, cpi, unemployment, is_holiday]])
-    
     prediction = model.predict(input_data)[0]
-
     st.success(f"💰 Predicted Weekly Sales: ${prediction:,.2f}")
