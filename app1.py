@@ -8,8 +8,8 @@ with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Load the columns used during training
-with open('columns.pkl', 'rb') as file:
-    feature_columns = pickle.load(file)
+#with open('columns.pkl', 'rb') as file:
+#    feature_columns = pickle.load(file)
 
 st.title("🛒 Walmart Weekly Sales Prediction")
 st.markdown("### Predict weekly sales using key inputs below.")
