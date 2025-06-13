@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 # Load the trained model
-model = pickle.load(open('model.pkl', 'best_xgb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 st.title("🛒 Walmart Weekly Sales Prediction")
 
